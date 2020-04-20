@@ -4,10 +4,12 @@
     - Use the 'Lato' font family at 18px throughout the body of the document
     - cover background with the "map-bg.jpg" image in the images directory. 
 */
-
-nav {
-    font-family: sans-serif;
-    font-size: 10px;
+ 
+ body {
+    font-family: 'lato';
+    font-size: 18px;
+    background-size: cover;
+    background-image: url("../images/map-bg.jpg");
 }
 
 #main {
@@ -21,15 +23,19 @@ nav {
         - set the font size to 45px 
         - set the font color to #5d4037
 */
-
+h1 {
+    font-family: 'Supermercado One';
+    font-weight: 45px;
+    color: #5d4037;
+    
+}
 /* 
     Update the following ruleset (#menu) to accomplish the following:
         - Set the separator between the columns (the "column-rule") to be 2px dashed rosybrown. 
 */
 
 #menu {
-    columns: 400px 2;
-    column-gap: 100px;
+   column-rule: 2px dashed rosybrown;
 }
 
 section {
@@ -45,16 +51,19 @@ h2 {
         - Show each of the section headings of the menu  in small caps
         - set the font color to #6d4c41
 */
-
+h2 {
+   color:#6d4c41 ;
+   font-variant: small-caps;
+}
 /* 
     Add a CSS ruleset targeting the name of each menu item to accomplish the following:
         - Set the font size to 20px
         - Make the font bold
 */
 
-dd {
-    margin: 0 0 12px 0;
-    display: flex;
+dt {
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .details {
@@ -68,8 +77,10 @@ dd {
 */
 
 .price {
+    font-size: large;
     order: 2;
     padding-left: 10px;
+    color: 'firebrick';
 }
 
 address {
