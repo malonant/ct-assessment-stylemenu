@@ -36,6 +36,9 @@ h1 {
 
 #menu {
    column-rule: 2px dashed rosybrown;
+   columns: 400px 2;
+
+    column-gap: 100px; 
 }
 
 section {
@@ -79,8 +82,8 @@ dt {
 .price {
     font-size: large;
     order: 2;
-    padding-left: 10px;
-    color: 'firebrick';
+    padding-right: 10px;
+    color: firebrick;
 }
 
 address {
@@ -90,4 +93,10 @@ address {
 /* 
     Add a CSS ruleset targeting the footer to accomplish the following:
         - Draw a 2px dashed rosybrown border
+        
 */
+ footer{
+     border-style: dashed;
+     border-radius: 2px;
+     border-color:rosybrown ;
+ }
